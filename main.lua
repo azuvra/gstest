@@ -6144,7 +6144,7 @@ do
                     library.colors[modemenu_frame] = {
                         Color = "lightcontrast"
                     }
-                    --
+                    --[[
                     local keybind__gradient = utility:Create("Image", {Vector2.new(0,0), modemenu_frame}, {
                         Size = utility:Size(1, 0, 1, 0, modemenu_frame),
                         Position = utility:Position(0, 0, 0 , 0, modemenu_frame),
@@ -6152,7 +6152,11 @@ do
                         Visible = page.open
                     }, keybind.modemenu.drawings)
                     --
-                    utility:LoadImage(keybind__gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
+                   ]]
+                   
+                   -- utility:LoadImage(keybind__gradient, "gradient", "https://i.imgur.com/5hmlrjX.png")
+
+
                     --
                     for i,v in pairs({"Always", "Toggle", "On Hold", "Off Hold"}) do
                         local button_title = utility:Create("TextLabel", {Vector2.new(modemenu_frame.Size.X/2,15 * (i-1)), modemenu_frame}, {
