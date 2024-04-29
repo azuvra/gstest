@@ -1,5 +1,7 @@
 --[[
     @gs.cc
+
+    LoadImage
 ]]
 -- // Variables
 local ws, uis, rs, hs, cas, plrs, stats = game:GetService("Workspace"), game:GetService("UserInputService"), game:GetService("RunService"), game:GetService("HttpService"), game:GetService("ContextActionService"), game:GetService("Players"), game:GetService("Stats")
@@ -338,7 +340,7 @@ do
     end
     --
     function utility:LoadImage(instance, imageName, imageLink)
-        local data
+        --[[local data
         --
         if isfile(library.folders.assets.."/"..imageName..".png") then
             data = readfile(library.folders.assets.."/"..imageName..".png")
@@ -353,7 +355,7 @@ do
         --
         if data and instance then
             instance.Data = data
-        end
+        end]]
     end
     --
     function utility:Lerp(instance, instanceTo, instanceTime)
